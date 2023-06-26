@@ -243,6 +243,7 @@ form>input {
 
     .hero-small{
         font-size: 18px;
+        font-weight: 400;
     }
 
     form>input {
@@ -311,7 +312,7 @@ footer>div{
     flex-direction: column;
     gap: 5px;
     text-align: center;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 footer>div>p{
