@@ -17,15 +17,36 @@
                 <a>Social Media</a>
                 <img src="media/down-arrow-svgrepo-com (1).svg" style="width: 12px;">
                 <div class="dropdown-nav">
-                    <a href="">Twitter</a>
+                    <a class="twitter" href="">Twitter</a>
                     <a>YouTube</a>
                     <a>Instagram</a>
-                    <a>Podcast</a>
+                    <a class="podcast">Podcast</a>
                 </div>
             </div>
             <a href="pages/coaching.html">Coaching</a>
-            <a href="pages/subscribe.html">Subscribe</a>
+            <a href="pages/subscribe.html">Subscribe</a>            
         </nav>
+
+        <!--Small Nav-->
+
+        <div class="small-nav">
+            <img class="menu-icon" src="media/icons8-menu.svg" style="width: 42px;">
+            <div class="menu-content">
+                <a href="pages/articles.html">Articles</a>
+                <div class="small-dropdown-container">
+                    <a>Social Media</a>
+                    <img src="media/iconmonstr-arrow-25.svg" style="width: 20px;">
+                    <div class="small-dropdown-nav">
+                        <a class="twitter" href="">Twitter</a>
+                        <a>YouTube</a>
+                        <a>Instagram</a>
+                        <a class="podcast">Podcast</a>
+                    </div>
+                </div>
+                <a href="pages/coaching.html">Coaching</a>
+                <a href="pages/subscribe.html">Subscribe</a>
+            </div>
+        </div>
     </header>
     <!--Hero-->
     <div class="hero">
@@ -74,5 +95,13 @@
             <p>ibhol1702@gmail.com</p>
         </div>
     </footer>
+    <script>
+            const dropdownBtn = document.querySelector('.menu-icon');
+        const dropdownContent = document.querySelector('.menu-content');
+        
+        dropdownBtn.addEventListener('click', function() {
+        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>

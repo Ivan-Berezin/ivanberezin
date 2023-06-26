@@ -45,15 +45,19 @@ nav {
     position: relative;
 }
 
+.dropdown-container>a{
+    padding-bottom: 10px;
+}
+
 .dropdown-nav {
     display: none;
     color: white;
     background-color: rgb(78, 78, 78);
     border-radius: 8px;
     position: absolute;
-    top: 20px;
+    top: 30px;
     z-index: 1;
-    min-width: 116px;
+    min-width: 130px;
 }
 
 .dropdown-nav>a{
@@ -66,13 +70,107 @@ nav {
     color: white;
     padding: 5px;
     display: block;
-    bac
+    background-color: black;
+}
+
+
+
+.twitter {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.podcast {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .dropdown-container:hover .dropdown-nav{
     display: block;
 }
 
+.small-nav{
+    display: none;
+}
+
+.menu-content{
+    display: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 40px;
+    position: absolute;
+    right: -20px;
+    top: 100px;
+    z-index: 1;
+    min-width: 300px;
+}
+
+.menu-content>a{
+    display: block;
+    color: white;
+    font-size: 24px; 
+    padding-top: 20px;   
+}
+
+.small-dropdown-container {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    padding-right: 50px;
+}
+
+.small-dropdown-container>a {
+    color: white;
+    font-size: 24px;
+    
+}
+
+.small-dropdown-container:hover .small-dropdown-nav{
+    display: block;
+}
+
+.small-dropdown-nav {
+    display: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 1px white solid;
+    position: absolute;
+    left: 180px;
+    bottom: -80px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.small-dropdown-nav>a{
+    color: white;
+    padding: 5px;
+    display: block;
+}
+
+.small-dropdown-nav>a:hover{
+    color: white;
+    padding: 5px;
+    display: block;
+    background-color: rgb(117, 117, 117);
+}
+
+@media screen and (max-width:850px) {
+    nav {
+        display: none;
+    }
+
+    .small-nav {
+        display: flex;
+    }
+    
+}
+
+.menu-icon:click .menu-content{
+    display: block;
+    
+}
 
 /* Hero */
 
@@ -124,15 +222,8 @@ form>input {
 }
 
 @media screen and (max-width:850px) {
-    .hero-img{
-        max-width: 50%;
-    } 
-
     .hero{
         flex-wrap: wrap;
-    }
-
-    .hero-text{
     }
 }
 
