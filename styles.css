@@ -15,6 +15,10 @@ a:visited{
     color: black;
 }
 
+body>a:hover {
+    text-decoration-line: underline;
+}
+
 /*header */
 
 
@@ -104,6 +108,7 @@ nav {
     top: 100px;
     z-index: 1;
     min-width: 300px;
+
 }
 
 .menu-content>a{

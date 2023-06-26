@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Ivan Berezin</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <a href="/index.html"><h1>Ivan Berezin</h1></a>
+        <nav>
+            <a href="/pages/articles.html">Articles</a>
+            <div class="dropdown-container">
+                <a>Social Media</a>
+                <img src="/media/down-arrow-svgrepo-com (1).svg" style="width: 12px;">
+                <div class="dropdown-nav">
+                    <a class="twitter" href="">Twitter</a>
+                    <a>YouTube</a>
+                    <a>Instagram</a>
+                    <a class="podcast">Podcast</a>
+                </div>
+            </div>
+            <a href="/pages/coaching.html">Coaching</a>
+            <a href="/pages/subscribe.html">Subscribe</a>            
+        </nav>
+
+        <!--Small Nav-->
+
+        <div class="small-nav">
+            <img class="menu-icon" src="/media/icons8-menu.svg" style="width: 42px;">
+            <div class="menu-content">
+                <a href="/pages/articles.html">Articles</a>
+                <div class="small-dropdown-container">
+                    <a>Social Media</a>
+                    <img src="/media/iconmonstr-arrow-25.svg" style="width: 20px;">
+                    <div class="small-dropdown-nav">
+                        <a class="twitter" href="">Twitter</a>
+                        <a>YouTube</a>
+                        <a>Instagram</a>
+                        <a class="podcast">Podcast</a>
+                    </div>
+                </div>
+                <a href="/pages/coaching.html">Coaching</a>
+                <a href="/pages/subscribe.html">Subscribe</a>
+            </div>
+        </div>
+    </header>
+    <!--Articles-->
+    <div class="articles-background">
+        <div class="articles" style="padding: 80px;">
+            <a href="/pages/articles/from-trauma-to-responsibility.html">
+                <div class="article" style="background-image: url(/media/yukiolowbrightness\ \(1\).png); background-size: cover; background-position: center center; min-height: 300px;">
+                    <h3 style="color: white;">FROM TRAUMA TO RESPONSIBILITY</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--Newsletter-->
+    <div class="hero newsletter" style="background-color: orange; align-items: center;">
+        <div class="hero-text newsletter-text">
+            <p class="hero-big" style="font-size: 28px;">Lets figure out life's meaning through the teachings of literature, psychology and philosophy.</p>
+            <p class="hero-small" style="font-size: 22px">Join the newsletter to receive updates when I post a new article.</p>
+        </div>
+        <div>
+            <form id="myForm" action="https://formsubmit.co/ibhol1702@gmail.com" method="POST">
+                <input style="min-height: 35px; font-size: 30px;" type="text" id="name" name="name" placeholder="Name" required>
+                <input style="min-height: 35px; font-size: 30px;" type="email" id="email" name="email" placeholder="your@email.com" required>
+                <input style="min-height: 35px; font-size: 30px;" type="submit" value="Join" class="button">
+            </form>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div>
+            <a href="/pages/articles.html">Articles</a>
+            <a href="/pages/coaching.html">Coaching</a>
+            <a href="/pages/subscribe.html">Subscribe</a>
+            <a href="/pages/sources.html">Sources</a>
+            <a href="/pages/privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div>
+            <a>YouTube</a>
+            <a>Twitter</a>
+            <a>Instagram</a>
+            <a>Podcast</a>
+        </div>
+        <div>
+            <p>+52 55 4890 7355</p>
+            <p>ibhol1702@gmail.com</p>
+        </div>
+    </footer>
+    <script>
+            const dropdownBtn = document.querySelector('.menu-icon');
+        const dropdownContent = document.querySelector('.menu-content');
+        
+        dropdownBtn.addEventListener('click', function() {
+        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
