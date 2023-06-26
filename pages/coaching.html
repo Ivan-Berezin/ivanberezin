@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Ivan Berezin</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <a href="/index.html"><h1>Ivan Berezin</h1></a>
+        <nav>
+            <a href="/pages/articles.html">Articles</a>
+            <div class="dropdown-container">
+                <a>Social Media</a>
+                <img src="/media/down-arrow-svgrepo-com (1).svg" style="width: 12px;">
+                <div class="dropdown-nav">
+                    <a class="twitter" href="https://twitter.com/RealIvanBerezin">Twitter</a>
+                    <a href="https://www.youtube.com/channel/UClzz3blOPV6_E0svP8paAmA">YouTube</a>
+                    <a href="https://www.instagram.com/sabiduriamodern/">Instagram</a>
+                    <a href="https://redcircle.com/shows/580c3d85-6ee5-460f-9b62-39f602db7d12" class="podcast">Podcast</a>
+                </div>
+            </div>
+            <a href="/pages/coaching.html">Coaching</a>
+            <a href="/pages/subscribe.html">Subscribe</a>            
+        </nav>
+
+        <!--Small Nav-->
+
+        <div class="small-nav">
+            <img class="menu-icon" src="/media/icons8-menu.svg" style="width: 42px;">
+            <div class="menu-content">
+                <a href="/pages/articles.html">Articles</a>
+                <div class="small-dropdown-container">
+                    <a>Social Media</a>
+                    <img src="/media/iconmonstr-arrow-25.svg" style="width: 20px;">
+                    <div class="small-dropdown-nav">
+                        <a class="twitter" href="https://twitter.com/RealIvanBerezin">Twitter</a>
+                    <a href="https://www.youtube.com/channel/UClzz3blOPV6_E0svP8paAmA">YouTube</a>
+                    <a href="https://www.instagram.com/sabiduriamodern/">Instagram</a>
+                    <a href="https://redcircle.com/shows/580c3d85-6ee5-460f-9b62-39f602db7d12" class="podcast">Podcast</a>
+                    </div>
+                </div>
+                <a href="/pages/coaching.html">Coaching</a>
+                <a href="/pages/subscribe.html">Subscribe</a>
+            </div>
+        </div>
+    </header>
+    <!--Hero-->
+    <div class="hero" style="background-color: orange;">
+        <div class="hero-text">
+            <p class="hero-big">If my articles have inspired you to improve your life, i'd be more than happy to help you grow.</p>
+            <p class="hero-small">Share your contact information as well as some available hours (include time zone) so that we can connect and figure out how I can be of service.</p>
+            <form id="myForm" action="https://formsubmit.co/ibhol1702@gmail.com" method="POST">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <input type="text" id="text" name="text" placeholder="Available dates and time zone" required>
+                <input type="submit" value="Send" class="button">
+            </form>
+        </div>
+        <div class="hero-img">
+            <img src="/media/mypic.jpg">
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div>
+            <a href="/pages/articles.html">Articles</a>
+            <a href="/pages/coaching.html">Coaching</a>
+            <a href="/pages/subscribe.html">Subscribe</a>
+            <a href="/pages/sources.html">Sources</a>
+            <a href="/pages/privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div>
+            <a href="https://twitter.com/RealIvanBerezin">Twitter</a>
+            <a href="https://www.youtube.com/channel/UClzz3blOPV6_E0svP8paAmA">YouTube</a>
+            <a href="https://www.instagram.com/sabiduriamodern/">Instagram</a>
+            <a href="https://redcircle.com/shows/580c3d85-6ee5-460f-9b62-39f602db7d12">Podcast</a>
+        </div>
+        <div>
+            <p>+52 55 4890 7355</p>
+            <p>ibhol1702@gmail.com</p>
+        </div>
+    </footer>
+    <script>
+            const dropdownBtn = document.querySelector('.menu-icon');
+        const dropdownContent = document.querySelector('.menu-content');
+        
+        dropdownBtn.addEventListener('click', function() {
+        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
