@@ -187,7 +187,6 @@ nav {
     padding-left: 10vw;
     padding-right: 10vw;
     gap: 100px;
-    background-color: rgb(224, 224, 224);
 }
 
 .hero-text {
@@ -254,13 +253,14 @@ form>input {
 /*Articles*/
 
 .articles-background {
-    background-color: rgb(163, 163, 163);
+    background-color: #2A3030;
     padding-top: 10px;
     padding-left: 10vw;
     padding-right: 10vw;
 }
 .articles-background>a>p {
     font-size: 25px;
+    color: white;
 }
 
 .articles {
