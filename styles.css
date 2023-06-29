@@ -267,12 +267,15 @@ form>input {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .article{
     display: flex;
+    flex: auto;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .article:hover {
