@@ -267,15 +267,23 @@ form>input {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
+
 }
 
 .article{
     display: flex;
-    flex: auto;
+    flex: 1;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    max-width: 600px;
+}
+
+@media screen and (max-width:500px) {
+    .article {
+        min-width: 300px;
+    }
 }
 
 .article:hover {
@@ -328,6 +336,8 @@ footer>div>p{
 .article-banner-container {
     min-height: 300px;
     background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .article-text-container {
@@ -346,4 +356,23 @@ footer>div>p{
         padding: 20px;
         
     }
+}
+
+/* Coaching */
+
+.testimonial-div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.testimonial{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    min-width: 450px;
 }
