@@ -171,6 +171,12 @@ nav {
     
 }
 
+@media screen and (max-width: 360px) {
+    .small-dropdown-nav {
+        border-radius: 0px;
+    }
+}
+
 .menu-icon:click .menu-content{
     display: block;
     
@@ -375,4 +381,10 @@ footer>div>p{
     justify-content: center;
     margin-top: 20px;
     min-width: 450px;
+}
+
+@media screen and (max-width:500px) {
+    .testimonial {
+        min-width: 200px;
+    }
 }
